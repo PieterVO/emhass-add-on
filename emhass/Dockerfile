@@ -56,8 +56,8 @@ COPY rootfs /
 
 # Labels
 LABEL \
-  io.hass.name="emhass" \
-  io.hass.description="EMHASS: Energy Management for Home Assistant" \
+  io.hass.name="emhass-inj" \
+  io.hass.description="EMHASS: Energy Management for Home Assistant (Injection)" \
   io.hass.version=${BUILD_VERSION} \
   io.hass.type="addon" \
   io.hass.arch="aarch64|amd64|armhf|armv7"
