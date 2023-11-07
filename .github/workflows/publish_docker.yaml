@@ -22,7 +22,7 @@ jobs:
           args: |
             --amd64 \
             --target emhass \
-            --docker-hub davidusb
+            --docker-hub pietervo
   publish_aarch64:
     name: Publish-aarch64
     runs-on: ubuntu-latest
@@ -40,7 +40,7 @@ jobs:
           args: |
             --aarch64 \
             --target emhass \
-            --docker-hub davidusb
+            --docker-hub pietervo
   publish_armhf:
     name: Publish-armhf
     runs-on: ubuntu-latest
@@ -58,7 +58,7 @@ jobs:
           args: |
             --armhf \
             --target emhass \
-            --docker-hub davidusb
+            --docker-hub pietervo
   publish_armv7:
     name: Publish-armv7
     runs-on: ubuntu-latest
@@ -76,4 +76,4 @@ jobs:
           args: |
             --armv7 \
             --target emhass \
-            --docker-hub davidusb
+            --docker-hub pietervo
