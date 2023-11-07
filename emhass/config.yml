@@ -8,7 +8,7 @@ arch:
   - amd64
   - armhf
   - armv7
-image: "PieterVO/image-{arch}-emhass"
+image: "pietervo/image-{arch}-emhass"
 ports:
   5000/tcp: 5000
 ports_description:
