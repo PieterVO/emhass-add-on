@@ -1,4 +1,4 @@
-# EMHASS Add-on
+# EMHASS Add-on (with Grid Injection Max)
 
 A Home Assistant Add-on for the EMHASS module: Energy Management for Home Assistant
 
