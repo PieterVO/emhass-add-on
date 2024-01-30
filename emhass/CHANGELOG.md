@@ -1,5 +1,60 @@
 # Changelog
 
+## [0.6.0] - 2024-01-28
+Following update of EMHASS code v0.7.1
+### Improvement
+- Added a new feature to provide operating time windows for deferrable loads. Thanks to @michaelpiron
+- Added lots of new options to be configured by the user. Thanks to @GeoDerp
+- Updated stylesheet with mobile & dark theme by @GeoDerp
+- Improved launch.json to fully test EMHASS on different configurations. Thanks to @GeoDerp
+- Added new script to debug and develop new time series clustering feature
+- Improved documentation. Thanks to @g1za
+### Fix
+- Updated github workflow actions/checkout to v4 and actions/setup-python to v5
+- Changed default values for weight_battery_discharge and weight_battery_charge to zero
+- Renamed classes to conform to PEP8
+- Bump markupsafe from 2.1.3 to 2.1.4 
+
+## [0.5.4] - 2023-12-19
+Following update of EMHASS code v0.6.2
+### Improvement
+- Added option to pass additional weight for battery usage
+- Improved coverage
+### Fix
+- Updated optimization constraints to solve conflict for `set_def_constant` and `treat_def_as_semi_cont` cases
+
+## [0.5.3] - 2023-12-19
+### Fix
+- Stepping down to Python 3.9 for ARMHF architectures.
+
+## [0.5.2] - 2023-12-18
+### Fix
+- Fixes following update of EMHASS code v0.6.1
+- Added --break-system-packages option to buil docker image to solve for PEP 668
+
+## [0.5.1] - 2023-12-17
+### Fix
+- Patching v0.5.0. Updated to Python 3.11 using bookworm debian version
+
+## [0.5.0] - 2023-12-17
+Improvements and fixes following update of EMHASS code v0.6.0
+### Improvement
+- Now Python 3.11 is fully supported, thanks to @pail23
+- We now publish the optimization status on sensor.optim_status
+- Bumped setuptools, skforecast, numpy, scipy, pandas
+- A good bunch of documentation improvements thanks to @g1za
+- Improved code coverage (a little bit ;-)
+### Fix
+- Some fixes managing time zones, thanks to @pail23
+- Bug fix on grid cost function equation, thanks to @michaelpiron
+- Applying a first set of fixes proposed by @smurfix:
+  - Don't ignore HTTP errors
+  - Handle missing variable correctly
+  - Slight error message improvement
+  - Just use the default solver
+  - Get locations from environment in non-app mode
+  - Tolerate running directly from source
+
 ## [0.4.2] - 2023-10-19
 ### Fix
 - Updated requirements.txt with skforecast 0.10.1
