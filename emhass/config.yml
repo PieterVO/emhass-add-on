@@ -131,7 +131,8 @@ schema:
   load_offpeak_hours_cost: "float(0,)?"
   production_price_forecast_method: "list(constant|csv)?" #optional
   photovoltaic_production_sell_price: "float(0,)?"
-  maximum_power_to_grid: int(0,)
+  maximum_power_from_grid: "int(0,)?"
+  maximum_power_to_grid: "int(0,)?"
   list_pv_module_model:
     - pv_module_model: "str?"
   list_pv_inverter_model:
