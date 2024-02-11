@@ -1,5 +1,35 @@
 # Changelog
 
+## [0.6.6] - 2024-02-11
+### Improvement
+- Bumped the webui. Some great new features and styling. Now it is possible to pass data directly as lsit of values when using the buttons in the webui. Thanks to @GeoDerp
+- Added two additional testing environment options. Thanks to @GeoDerp
+### Fix
+- Bump markupsafe from 2.1.4 to 2.1.5
+
+## [0.6.5] - 2024-02-06
+### Fix
+- Fixed number of startups constraint for deferrable load at the begining of the optimization period
+- Fixed list of bools from options.json
+- Fixed some testing and debugging scripts
+
+## [0.6.4] - 2024-02-04
+### Fix
+- Following new patch on "perform_backtest": "false" has no effect
+
+## [0.6.3] - 2024-02-04
+### Fix
+- Fixed broken build params method. Reverting back to alternate PR from @GeoDerp
+
+## [0.6.2] - 2024-02-04
+Following update of EMHASS code v0.7.3
+### Fix
+- Fixed bug when booleans, solving "perform_backtest": "false" has no effect
+- Refactored util.py method to handle optional parameters
+- Updated web server, solving runtime issues
+- Solved issue passing solcast and solar.forecast runtime params 
+- Updated documentation requirements
+
 ## [0.6.1] - 2024-01-30
 Patched new version with bug fixes on ptahs and missing list types
 
@@ -562,6 +592,19 @@ The new machine learning forecast module is here! Check the updated documentatio
 [0.3.16]: https://github.com/davidusb-geek/emhass-add-on/releases/tag/v0.3.16
 [0.4.0]: https://github.com/davidusb-geek/emhass-add-on/releases/tag/v0.4.0
 [0.4.1]: https://github.com/davidusb-geek/emhass-add-on/releases/tag/v0.4.1
+[0.4.2]: https://github.com/davidusb-geek/emhass-add-on/releases/tag/v0.4.2
+[0.5.0]: https://github.com/davidusb-geek/emhass-add-on/releases/tag/v0.5.0
+[0.5.1]: https://github.com/davidusb-geek/emhass-add-on/releases/tag/v0.5.1
+[0.5.2]: https://github.com/davidusb-geek/emhass-add-on/releases/tag/v0.5.2
+[0.5.3]: https://github.com/davidusb-geek/emhass-add-on/releases/tag/v0.5.3
+[0.5.4]: https://github.com/davidusb-geek/emhass-add-on/releases/tag/v0.5.4
+[0.6.0]: https://github.com/davidusb-geek/emhass-add-on/releases/tag/v0.6.0
+[0.6.1]: https://github.com/davidusb-geek/emhass-add-on/releases/tag/v0.6.1
+[0.6.2]: https://github.com/davidusb-geek/emhass-add-on/releases/tag/v0.6.2
+[0.6.3]: https://github.com/davidusb-geek/emhass-add-on/releases/tag/v0.6.3
+[0.6.4]: https://github.com/davidusb-geek/emhass-add-on/releases/tag/v0.6.4
+[0.6.5]: https://github.com/davidusb-geek/emhass-add-on/releases/tag/v0.6.5
+[0.6.6]: https://github.com/davidusb-geek/emhass-add-on/releases/tag/v0.6.6
 
 # Notes
 All notable changes to this project will be documented in this file.
