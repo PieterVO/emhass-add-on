@@ -1,7 +1,7 @@
 name: EMHASS Injection Max
 description: Energy Management for Home Assistant (with Injection)
 url: https://github.com/PieterVO/emhass
-version: 0.6.6
+version: 0.8.1
 slug: emhass
 arch:
   - aarch64
@@ -23,6 +23,12 @@ homeassistant_api: true
 ingress: true
 ingress_port: 5000
 ingress_stream: true
+panel_icon: mdi:home-lightning-bolt-outline
+panel_title: EMHASS
+environment:
+  OPTIONS_PATH: '/data/options.json'
+  CONFIG_PATH: '/app/config_emhass.yaml'
+  DATA_PATH: '/data/'
 options:
   logging_level: INFO
   costfun: profit
