@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.8.1] - 2024-03-08
+## [0.8.2] - 2024-03-08
 ### Fix
 - Fix python concat error runtimeparams
 
